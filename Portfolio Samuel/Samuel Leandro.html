@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS Integrado para o portfólio */
+
+        /* Corpo da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Título */
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* Seções */
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Formulário de Contato */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Botão de Envio */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Imagem Responsiva */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Vídeo Responsivo */
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Menu */
+        nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#identificacao">Identificação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação Acadêmica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#atuacao">Atuação Profissional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Identificação -->
+    <section id="Sobre mim">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Samuel Leandro Freire, nascido em Brasília em 15 de março de 2002. Sou extremamente fã do cantor Travis Scott e realizei o sonho de ir ao show dele no ano de 2024. Sem dúvida meus pontos fortes são: Tecnologia e Esportes.</p>
+    </section>
+
+    <!-- Formação Acadêmica -->
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        <p>Ensino Médio, Inglês básico, e no momento cursando o 1° semestre em de Análise e Desenvolvimento de Sistemas. Na Faculdade Projeção, localizada em Sobradinho.
+    Metas: Me tornar um programador de sucesso, comprar um carro, viajar o mundo e ter uma família.</p>
+    
+    </section>
+
+    <!-- Atuação Profissional -->
+    <section id="atuacao">
+        <h2>Atuação Profissional</h2>
+        <p>Atualmente trabalho como auxiliar administrativo em uma empresa relacionada a saúde. Pretendo começar a estagiar na minha área o mais rápido possível.</p>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Jogo Counter Strike, gosto de assistir jogos do meu time de coração, Flamengo. Passo boa parte do tempo com meus amigos e família. Final de semana tiro pra estudar e curtir festas com meus amigos.</p>
+    </section>
+
+    <!-- Conteúdo Audiovisual -->
+    <section id="conteudo-audiovisual">
+        <h2>Registros</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Uma foto minha</h3>
+                <img src="eu.jpeg" alt="Imagem Exemplo" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Show Travis</h3>
+                <video controls>
+                    <source src="traviss.mp4" type="video/mp4">
+                    Seu navegador não suporta este formato de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
